@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.reg-form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
+    gap: 15px;
+}
+
+.reg-form h1 {
+    text-align: center;
+}
+
+.reg-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.reg-form input {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.reg-form button {
+    color: aquamarine;
+    font-weight: 900;
+    width: 105%;
+    font-size: large;
+    padding: 15px;
+    background: linear-gradient(360deg, rgba(2,0,36,1) 0%, rgba(0,78,91,1) 0%, rgba(0,255,220,1) 100%);
+    border: none;
+    cursor: pointer;
+    transition: all 0.6s ease-in-out;
+    -webkit-transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+    -ms-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+    border-bottom: 0px solid #000000b0;
+
+}
+
+.reg-form button:hover{
+    color: black;
+}
