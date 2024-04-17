@@ -1,0 +1,233 @@
+* {
+    transition: all 0.6s ease-in-out;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.modal-header{
+    background: aquamarine;
+}
+
+.modal-body{
+    background: linear-gradient(360deg, rgba(2, 0, 36, 1) 0%, rgba(24, 83, 93, 1) 17%, rgba(47, 170, 153, 1) 100%);
+    position: relative;
+    flex: 1 1 auto;
+    padding: var(--bs-modal-padding);
+}
+
+.form-container {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#tovar-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-submit-add-tovar {
+    font-size: large;
+    border-radius: 15px;
+    background-color: black;
+    font-weight: bold;
+    font-size: large;
+}
+
+.btn-submit-add-tovar:hover {
+    font-size: x-large;
+    background-color: white;
+    color: black;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    padding: 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.sidebar {
+    height: 100%;
+    width: 150px;
+    position: fixed;
+    top: 0;
+    border-right: 1px solid;
+    left: 0;
+    background-color: #f0f0f0;
+    padding-top: 20px;
+}
+
+.sidebar a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+.sidebar a:hover {
+    background-color: #ddd;
+}
+
+.active {
+    background-color: #ccc; /* Corrected color code */
+}
+
+.content {
+    display: contents;
+}
+
+h2 {
+    text-align: center;
+}
+
+#categories-content{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.category-btn{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border: none;
+    transition: all 0.6s ease-in-out;
+    -webkit-transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+    -ms-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+}
+
+.category-btn:hover{
+    background-color: white;
+    color: black;
+
+}
+
+#tovarsInfo {
+    display: flex;
+    margin-left: 14%;
+    flex-direction: column;
+    padding: 1%;
+    border: 5px solid black;
+}
+
+#control-tovars {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 70%;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.unblock,
+.restore {
+    background: none;
+    padding: 5px 15px;
+    border-radius: 30px;
+    color: white; /* Specified color for text */
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(24, 83, 93, 1) 17%, rgba(47, 170, 153, 1) 100%);
+    text-decoration: none;
+    font-weight: 800;
+    border: 1px solid transparent;
+    transition: all 0.6s ease-in-out;
+}
+
+.unblock:hover,
+.restore:hover {
+    border-radius: 30px;
+    padding: 5px 15px;
+    color: aqua;
+    background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(24, 83, 93, 1) 17%, rgba(47, 170, 153, 1) 100%);
+    font-weight: 800;
+}
+
+.remove,
+.delete {
+    background: none;
+    padding: 5px 15px;
+    border-radius: 30px;
+    color: red;
+    text-decoration: none;
+    font-weight: 800;
+    border: 1px solid transparent;
+    transition: all 0.6s ease-in-out;
+}
+
+.remove:hover,
+.delete:hover {
+    border-radius: 30px;
+    padding: 5px 15px;
+    color: #fff;
+    background: red;
+    font-weight: 800;
+}
+
+.block {
+    background: none;
+    padding: 5px 15px;
+    border-radius: 30px;
+    color: red;
+    text-decoration: none;
+    font-weight: 800;
+    transition: all 0.6s ease-in-out;
+}
+
+.block:hover {
+    border-radius: 30px;
+    padding: 5px 15px;
+    color: #fff;
+    background: red;
+    font-weight: 800;
+}
+
+#users-control,
+#tovars-control,
+#categories-control {
+    display: flex;
+    justify-content: center;
+}
