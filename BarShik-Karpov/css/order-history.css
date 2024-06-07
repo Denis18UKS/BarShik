@@ -1,0 +1,12 @@
+body{
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(24,83,93,1) 17%, rgba(47,170,153,1) 100%);
+    text-align: center;
+}
+
+#back{
+    margin: 2%;
+    width: 3%;
+    margin-top: 8%;
+    cursor: pointer;
+    position: absolute;
+}
